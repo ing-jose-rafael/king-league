@@ -1,6 +1,11 @@
 import * as cheerio from 'cheerio'
-import { writeFile } from 'node:fs/promises'
+import { writeFile, readFile } from 'node:fs/promises'
 import path from 'node:path'
+
+const DB_PATH = path.join(process.cwd(), './db/')
+const TEAMS = await readFile(`${DB_PATH}/teams.json`, 'utf-8').then(JSON.parse)
+
+// import TEAMS from '../db/teams.json' assert { type: 'json' };
 
 const URl = {
   learderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
@@ -28,15 +33,17 @@ async function getLearderboard () {
     cardsRed: { selector: '.fs-table-text_9', typeOf: 'number' }
   }
 
+  const getTeamFrom = ({ name }) => TEAMS.find(team => team.name === name)
+
   const clearText = text => text
     .replace(/\t|\n|\s:/g, '')
     .replace(/.*:/g, ' ')
     .trim()
 
-  const learderBoardSelectorEntries = Object.entries(LEARDERBOARD_SELECTORS)
-  const learderboard = []
+  const leaderBoardSelectorEntries = Object.entries(LEARDERBOARD_SELECTORS)
+  const leaderboard = []
   $rows.each((index, el) => {
-    const learderBoardEntries = learderBoardSelectorEntries.map(([key, { selector, typeOf }]) => {
+    const leaderBoardEntries = leaderBoardSelectorEntries.map(([key, { selector, typeOf }]) => {
       // const selector = `${LEARDERBOARD_SELECTORS_PREFIX} ${specificSelector}`
       const rawValue = $(el).find(selector).text()
       const cleanValue = clearText(rawValue)
@@ -45,44 +52,23 @@ async function getLearderboard () {
       const value = typeOf === 'number' ? Number(cleanValue) : cleanValue
       return [key, value]
     })
-    learderboard.push(Object.fromEntries(learderBoardEntries))
 
-    // console.log(Object.fromEntries(learderBoardEntries))
-    // const rawTeam = $el.find('.fs-table-text_3').text()
-    // const rawVictories = $el.find('.fs-table-text_4').text()
-    // const rawLoses = $el.find('.fs-table-text_5').text()
-    // const rawGoalsScored = $el.find('.fs-table-text_6').text()
-    // const rawGoalsConceded = $el.find('.fs-table-text_7').text()
-    // const rawCardsYellow = $el.find('.fs-table-text_8').text()
-    // const rawCardsRed = $el.find('.fs-table-text_9').text()
+    const { team: teamName, ...leaderboardForTeam } = Object.fromEntries(leaderBoardEntries)
 
-    // console.log(
-    //   clearText(rawTeam),
-    //   clearText(rawVictories),
-    //   clearText(rawLoses),
-    //   clearText(rawGoalsScored),
-    //   clearText(rawGoalsConceded),
-    //   clearText(rawCardsYellow),
-    //   clearText(rawCardsRed)
-    // )
+    const team = getTeamFrom({ name: teamName })
+
+    leaderboard.push({
+      ...leaderboardForTeam,
+      team
+    })
+    // leaderboard.push(Object.fromEntries(leaderBoardEntries))
   })
-  return learderboard
+  return leaderboard
 }
 
-const learderboard = await getLearderboard()
-const filePath = path.join(process.cwd(), './db', 'learderboard.json')
+const leaderboard = await getLearderboard()
+// const filePath = path.join(process.cwd(), './db', 'learderboard.json')
 
-console.log(filePath)
-await writeFile(filePath, JSON.stringify(learderboard, null, 2), 'utf-8')
-
-// const learderboard = [
-//   {
-//     team: 'Team 1',
-//     wins: 0,
-//     loses: 0,
-//     goalsScored: 0,
-//     goalsConceded: 0,
-//     cardsYellow: 0,
-//     cardsRed: 0
-//   }
-// ]
+// console.log(filePath)
+await writeFile(`${DB_PATH}/leaderboard.json`, JSON.stringify(leaderboard, null, 2), 'utf-8')
+// await writeFile(`${DB_PATH}/leaderboard.json`, JSON.stringify(leaderboard, null, 2), 'utf-8')
