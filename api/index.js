@@ -8,20 +8,20 @@ import { Hono } from 'hono'
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
-import learderboard from '../db/learderboard.json'
+import learderboard from '../db/leaderboard.json'
 
 const app = new Hono()
 
 app.get('/', (ctx) => {
   return ctx.json([
     {
-      endpoint: '/learderboard',
-      description: 'Return the learderboard'
+      endpoint: '/leaderboard',
+      description: 'Return the leaderboard'
     }
   ])
 })
 
-app.get('/learderboard', (ctx) => {
+app.get('/leaderboard', (ctx) => {
   return ctx.json(learderboard)
 })
 
