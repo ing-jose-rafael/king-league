@@ -16,7 +16,17 @@ const app = new Hono()
 app.get('/', (ctx) => ctx.json([
   {
     endpoint: '/leaderboard',
-    description: 'Return the leaderboard'
+    methods: [
+      'GET'
+    ],
+    description: 'Return the leaderboard',
+    _links: {
+      self: [
+        {
+          href: 'https://kingsleague.pro/wp-json/wp/v2/posts'
+        }
+      ]
+    }
   }
 ]))
 
