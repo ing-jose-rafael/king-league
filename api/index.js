@@ -9,21 +9,21 @@ import { Hono } from 'hono'
  * Learn more at https://developers.cloudflare.com/workers/
  */
 import learderboard from '../db/leaderboard.json'
+import { serveStatic } from 'hono/serve-static.module'
 
 const app = new Hono()
 
-app.get('/', (ctx) => {
-  return ctx.json([
-    {
-      endpoint: '/leaderboard',
-      description: 'Return the leaderboard'
-    }
-  ])
-})
+app.get('/', (ctx) => ctx.json([
+  {
+    endpoint: '/leaderboard',
+    description: 'Return the leaderboard'
+  }
+]))
 
 app.get('/leaderboard', (ctx) => {
   return ctx.json(learderboard)
 })
+app.get('/static/*', serveStatic({ root: './' }))
 
 export default app
 // export default {
