@@ -8,8 +8,10 @@ import { Hono } from 'hono'
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
-import learderboard from '../db/leaderboard.json'
 import { serveStatic } from 'hono/serve-static.module'
+import learderboard from '../db/leaderboard.json'
+import teams from '../db/teams.json'
+import presidents from '../db/presidents.json'
 
 const app = new Hono()
 
@@ -19,11 +21,39 @@ app.get('/', (ctx) => ctx.json([
     methods: [
       'GET'
     ],
-    description: 'Return the leaderboard',
+    description: 'Returns kins leagues leaderboard',
     _links: {
       self: [
         {
-          href: 'https://kingsleague.pro/wp-json/wp/v2/posts'
+          href: 'https://kings-league-api.ing-jcarreno.workers.dev/leaderboard'
+        }
+      ]
+    }
+  },
+  {
+    endpoint: '/presidents',
+    methods: [
+      'GET'
+    ],
+    description: 'Returns kins leagues presidents',
+    _links: {
+      self: [
+        {
+          href: 'https://kings-league-api.ing-jcarreno.workers.dev/presidents'
+        }
+      ]
+    }
+  },
+  {
+    endpoint: '/teams',
+    methods: [
+      'GET'
+    ],
+    description: 'Returns kins leagues teams',
+    _links: {
+      self: [
+        {
+          href: 'https://kings-league-api.ing-jcarreno.workers.dev/teams'
         }
       ]
     }
@@ -33,6 +63,20 @@ app.get('/', (ctx) => ctx.json([
 app.get('/leaderboard', (ctx) => {
   return ctx.json(learderboard)
 })
+
+app.get('/presidents', (ctx) => {
+  return ctx.json(presidents)
+})
+app.get('/presidents/:id', (ctx) => {
+  const id = ctx.req.param('id')
+  const foundPresident = presidents.find(president => president.id === id)
+  return foundPresident ? ctx.json(foundPresident) : ctx.json({ message: 'President not found' }, 404)
+})
+
+app.get('/teams', (ctx) => {
+  return ctx.json(teams)
+})
+
 app.get('/static/*', serveStatic({ root: './' }))
 
 export default app
