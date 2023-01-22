@@ -3,72 +3,72 @@
     "id": "iker-casillas",
     "name": "Iker Casillas",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/iker-casillas.png",
-    "teamID": 0
+    "teamID": "1k"
   },
   {
     "id": "juan-guarnizo",
     "name": "Juan Guarnizo",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/juan-guarnizo.png",
-    "teamID": 0
+    "teamId": "aniquiladores-fc"
   },
   {
     "id": "adri-contreras",
     "name": "Adri Contreras",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/adri-contreras.png",
-    "teamID": 0
+    "teamId": "el-barrio"
   },
   {
     "id": "gerard-romero",
     "name": "Gerard Romero",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/gerard-romero.png",
-    "teamID": 0
+    "teamId": "jijantes-fc"
   },
   {
     "id": "kun-aguero",
     "name": "Kun Agüero",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/kun-aguero.png",
-    "teamID": 0
+    "teamId": "kunisports"
   },
   {
     "id": "perxitaa",
     "name": "Perxitaa",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/perxitaa.png",
-    "teamID": 0
+    "teamId": "los-troncos-fc"
   },
   {
     "id": "rivers",
     "name": "Rivers",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/rivers.png",
-    "teamID": 0
+    "teamId": "pio-fc"
   },
   {
     "id": "ibai-llanos",
     "name": "Ibai Llanos",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/ibai-llanos.png",
-    "teamID": 0
+    "teamId": "porcinos-fc"
   },
   {
     "id": "spursito",
     "name": "Spursito",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/spursito.png",
-    "teamID": 0
+    "teamId": "rayo-barcelona"
   },
   {
     "id": "thegrefg",
     "name": "TheGrefg",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/thegrefg.png",
-    "teamID": 0
+    "teamId": "saiyans-fc"
   },
   {
     "id": "djmariio",
     "name": "DjMaRiiO",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/djmariio.png",
-    "teamID": 0
+    "teamId": "ultimate-mostoles"
   },
   {
     "id": "hnos-buyer",
     "name": "Hnos. Buyer",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/hnos-buyer.png",
-    "teamID": 0
+    "teamId": "xbuyer-team"
   }
 ]
