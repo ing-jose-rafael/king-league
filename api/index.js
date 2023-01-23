@@ -15,50 +15,46 @@ import presidents from '../db/presidents.json'
 
 const app = new Hono()
 
-app.get('/', (ctx) => ctx.json([
-  {
-    endpoint: '/leaderboard',
-    methods: [
-      'GET'
-    ],
-    description: 'Returns kins leagues leaderboard',
-    _links: {
-      self: [
-        {
-          href: 'https://kings-league-api.ing-jcarreno.workers.dev/leaderboard'
-        }
-      ]
+app.get('/', (ctx) =>
+  ctx.json([
+    {
+      endpoint: '/leaderboard',
+      methods: ['GET'],
+      description: 'Returns kins leagues leaderboard',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/leaderboard'
+          }
+        ]
+      }
+    },
+    {
+      endpoint: '/presidents',
+      methods: ['GET'],
+      description: 'Returns kins leagues presidents',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/presidents'
+          }
+        ]
+      }
+    },
+    {
+      endpoint: '/teams',
+      methods: ['GET'],
+      description: 'Returns kins leagues teams',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/teams'
+          }
+        ]
+      }
     }
-  },
-  {
-    endpoint: '/presidents',
-    methods: [
-      'GET'
-    ],
-    description: 'Returns kins leagues presidents',
-    _links: {
-      self: [
-        {
-          href: 'https://kings-league-api.ing-jcarreno.workers.dev/presidents'
-        }
-      ]
-    }
-  },
-  {
-    endpoint: '/teams',
-    methods: [
-      'GET'
-    ],
-    description: 'Returns kins leagues teams',
-    _links: {
-      self: [
-        {
-          href: 'https://kings-league-api.ing-jcarreno.workers.dev/teams'
-        }
-      ]
-    }
-  }
-]))
+  ])
+)
 
 app.get('/leaderboard', (ctx) => {
   return ctx.json(learderboard)
@@ -69,8 +65,10 @@ app.get('/presidents', (ctx) => {
 })
 app.get('/presidents/:id', (ctx) => {
   const id = ctx.req.param('id')
-  const foundPresident = presidents.find(president => president.id === id)
-  return foundPresident ? ctx.json(foundPresident) : ctx.json({ message: 'President not found' }, 404)
+  const foundPresident = presidents.find((president) => president.id === id)
+  return foundPresident
+    ? ctx.json(foundPresident)
+    : ctx.json({ message: 'President not found' }, 404)
 })
 
 app.get('/teams', (ctx) => {

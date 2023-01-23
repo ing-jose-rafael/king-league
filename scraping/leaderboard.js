@@ -17,7 +17,7 @@ const scrape = async (url) => {
   return cheerio.load(html)
 }
 
-async function getLearderboard () {
+async function getLearderboard() {
   const $ = await scrape(URl.learderboard)
   const $rows = $('table tbody tr')
 
@@ -34,30 +34,38 @@ async function getLearderboard () {
   }
 
   const getTeamFrom = ({ name }) => {
-    const { presidentId, ...restOfteam } = TEAMS.find(team => team.name === name)
-    const president = PRESIDENTS.find(foundPresident => foundPresident.id === presidentId)
+    const { presidentId, ...restOfteam } = TEAMS.find(
+      (team) => team.name === name
+    )
+    const president = PRESIDENTS.find(
+      (foundPresident) => foundPresident.id === presidentId
+    )
     return { ...restOfteam, president }
   }
 
-  const clearText = text => text
-    .replace(/\t|\n|\s:/g, '')
-    .replace(/.*:/g, ' ')
-    .trim()
+  const clearText = (text) =>
+    text
+      .replace(/\t|\n|\s:/g, '')
+      .replace(/.*:/g, ' ')
+      .trim()
 
   const leaderBoardSelectorEntries = Object.entries(LEARDERBOARD_SELECTORS)
   const leaderboard = []
   $rows.each((index, el) => {
-    const leaderBoardEntries = leaderBoardSelectorEntries.map(([key, { selector, typeOf }]) => {
-      // const selector = `${LEARDERBOARD_SELECTORS_PREFIX} ${specificSelector}`
-      const rawValue = $(el).find(selector).text()
-      const cleanValue = clearText(rawValue)
-      // transformandoa numero
-      // const value = Number.isNaN(Number(cleanValue)) ? cleanValue : Number(cleanValue)
-      const value = typeOf === 'number' ? Number(cleanValue) : cleanValue
-      return [key, value]
-    })
+    const leaderBoardEntries = leaderBoardSelectorEntries.map(
+      ([key, { selector, typeOf }]) => {
+        // const selector = `${LEARDERBOARD_SELECTORS_PREFIX} ${specificSelector}`
+        const rawValue = $(el).find(selector).text()
+        const cleanValue = clearText(rawValue)
+        // transformandoa numero
+        // const value = Number.isNaN(Number(cleanValue)) ? cleanValue : Number(cleanValue)
+        const value = typeOf === 'number' ? Number(cleanValue) : cleanValue
+        return [key, value]
+      }
+    )
 
-    const { team: teamName, ...leaderboardForTeam } = Object.fromEntries(leaderBoardEntries)
+    const { team: teamName, ...leaderboardForTeam } =
+      Object.fromEntries(leaderBoardEntries)
 
     const team = getTeamFrom({ name: teamName })
 

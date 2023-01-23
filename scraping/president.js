@@ -1,14 +1,16 @@
-
 import { writeFile, readFile } from 'node:fs/promises'
 import path from 'node:path'
 
 const STATIC_PATH = path.join(process.cwd(), './assets/static/presidents')
 const DB_PATH = path.join(process.cwd(), './db/')
 
-const RAW_PRESIDENTS = await readFile(`${DB_PATH}/raw-presidents.json`, 'utf-8').then(JSON.parse)
+const RAW_PRESIDENTS = await readFile(
+  `${DB_PATH}/raw-presidents.json`,
+  'utf-8'
+).then(JSON.parse)
 
 const presidents = await Promise.all(
-  RAW_PRESIDENTS.map(async presidentInfo => {
+  RAW_PRESIDENTS.map(async (presidentInfo) => {
     const { slug: id, title, _links: links } = presidentInfo
     const { rendered: name } = title
 
@@ -20,7 +22,9 @@ const presidents = await Promise.all(
     const responseImageEndpoint = await fetch(imageApiEndpoint)
     const data = await responseImageEndpoint.json()
     const [imageInfo] = data
-    const { guid: { rendered: imageUrl } } = imageInfo
+    const {
+      guid: { rendered: imageUrl }
+    } = imageInfo
 
     const fileExtension = imageUrl.split('.').at(-1)
     console.log(`> Fetching image for president: ${name}`)
@@ -38,7 +42,9 @@ const presidents = await Promise.all(
 
     return { id, name, image: imageFileName, teamID: 0 }
   })
-
 )
 
-await writeFile(`${DB_PATH}/presidents.json`, JSON.stringify(presidents, null, 2))
+await writeFile(
+  `${DB_PATH}/presidents.json`,
+  JSON.stringify(presidents, null, 2)
+)

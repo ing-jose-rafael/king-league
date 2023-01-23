@@ -3,14 +3,18 @@ import path from 'node:path'
 
 const DB_PATH = path.join(process.cwd(), './db/')
 
-async function readDBFile (dbName) {
+async function readDBFile(dbName) {
   return readFile(`${DB_PATH}/${dbName}.json`, 'utf-8').then(JSON.parse)
 }
 
 export const TEAMS = await readDBFile('teams')
 export const PRESIDENTS = await readDBFile('presidents')
 
-export async function writeDBFile (dbName, data) {
+export async function writeDBFile(dbName, data) {
   // return readFile(`${DB_PATH}/${dbName}.json`, 'utf-8').then(JSON.parse)
-  await writeFile(`${DB_PATH}/${dbName}.json`, JSON.stringify(data, null, 2), 'utf-8')
+  await writeFile(
+    `${DB_PATH}/${dbName}.json`,
+    JSON.stringify(data, null, 2),
+    'utf-8'
+  )
 }
