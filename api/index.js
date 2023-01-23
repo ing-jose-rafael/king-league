@@ -42,6 +42,18 @@ app.get('/', (ctx) =>
       }
     },
     {
+      endpoint: '/presidents/:id',
+      methods: ['GET'],
+      description: 'Returns kins leagues team president',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/presidents/iker-casillas'
+          }
+        ]
+      }
+    },
+    {
       endpoint: '/teams',
       methods: ['GET'],
       description: 'Returns kins leagues teams',
@@ -49,6 +61,18 @@ app.get('/', (ctx) =>
         self: [
           {
             href: 'https://kings-league-api.ing-jcarreno.workers.dev/teams'
+          }
+        ]
+      }
+    },
+    {
+      endpoint: '/teams/:id',
+      methods: ['GET'],
+      description: 'Returns kins leagues team',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/teams/1k'
           }
         ]
       }
@@ -73,6 +97,14 @@ app.get('/presidents/:id', (ctx) => {
 
 app.get('/teams', (ctx) => {
   return ctx.json(teams)
+})
+
+app.get('/teams/:id', (ctx) => {
+  const teamId = ctx.req.param('id')
+  const foundteam = teams.find((teams) => teams.id === teamId)
+  return foundteam
+    ? ctx.json(foundteam)
+    : ctx.json({ message: 'Team not found' }, 404)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))
