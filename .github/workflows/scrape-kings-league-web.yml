@@ -22,7 +22,8 @@ jobs:
           node-version: 18
       - uses: pnpm/action-setup@v2
         with:
-          version: 6.0.2
+          version: 7.22.0
+          run_install: true
       - run: |
           node scraping/leaderboard.js
           git config user.name kings-league-bot
