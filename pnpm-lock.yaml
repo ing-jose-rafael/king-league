@@ -1,16 +1,17 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/tailwind': ^2.1.3
+  '@astrojs/tailwind': 2.1.3
   astro: 1.9.0
   cheerio: 1.0.0-rc.12
-  eslint-plugin-astro: ^0.23.0
+  eslint-plugin-astro: 0.23.0
   hono: 2.7.3
-  prettier: ^2.8.3
-  prettier-plugin-astro: ^0.7.2
-  standard: ^17.0.0
+  prettier: 2.8.3
+  prettier-plugin-astro: 0.7.2
+  standard: 17.0.0
   tailwindcss: ^3.0.24
-  vitest: ^0.27.2
+  vite: 4.0.4
+  vitest: 0.27.2
   wrangler: 2.8.0
 
 dependencies:
@@ -25,6 +26,7 @@ devDependencies:
   prettier: 2.8.3
   prettier-plugin-astro: 0.7.2
   standard: 17.0.0
+  vite: 4.0.4
   vitest: 0.27.2
   wrangler: 2.8.0
 
@@ -2538,6 +2540,7 @@ packages:
   /eslint-plugin-import/2.27.2_eslint@8.31.0:
     resolution: {integrity: sha512-/S1QaM52PzKy1C4c5Sw7hB6glROSUpMZ8RVREVC4se7z4AlyDxv0kU7uWkHc8aIVNb19oz86z7c6vdtuKUwLvw==}
     engines: {node: '>=4'}
+    deprecated: in v2.27.2, the `no-empty-named-blocks` rule has many false positives and a broken autofix. It is fixed in v2.27.3+
     peerDependencies:
       '@typescript-eslint/parser': '*'
       eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
@@ -5703,6 +5706,39 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
+
+  /vite/4.0.4:
+    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.16.17
+      postcss: 8.4.21
+      resolve: 1.22.1
+      rollup: 3.10.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
 
   /vite/4.0.4_@types+node@18.11.18:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
