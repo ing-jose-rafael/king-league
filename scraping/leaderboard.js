@@ -1,5 +1,5 @@
-import * as cheerio from 'cheerio'
 import { TEAMS, writeDBFile, PRESIDENTS } from '../db/index.js'
+import { clearText, scrape, URLS } from './utils.js'
 
 // const DB_PATH = path.join(process.cwd(), './db/')
 // const TEAMS = await readFile(`${DB_PATH}/teams.json`, 'utf-8').then(JSON.parse)
@@ -7,18 +7,18 @@ import { TEAMS, writeDBFile, PRESIDENTS } from '../db/index.js'
 
 // import TEAMS from '../db/teams.json' assert { type: 'json' };
 
-const URl = {
-  learderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
-}
+// const URl = {
+//   learderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
+// }
 
-const scrape = async (url) => {
-  const res = await fetch(url)
-  const html = await res.text()
-  return cheerio.load(html)
-}
+// const scrape = async (url) => {
+//   const res = await fetch(url)
+//   const html = await res.text()
+//   return cheerio.load(html)
+// }
 
 async function getLearderboard() {
-  const $ = await scrape(URl.learderboard)
+  const $ = await scrape(URLS.leaderboard)
   const $rows = $('table tbody tr')
 
   // const LEARDERBOARD_SELECTORS_PREFIX = $('table tbody tr')
@@ -42,12 +42,12 @@ async function getLearderboard() {
     )
     return { ...restOfteam, president }
   }
-
-  const clearText = (text) =>
-    text
-      .replace(/\t|\n|\s:/g, '')
-      .replace(/.*:/g, ' ')
-      .trim()
+	// quita todo lo que esta antes de :
+  // const clearText = (text) =>
+  //   text
+  //     .replace(/\t|\n|\s:/g, '')
+  //     .replace(/.*:/g, ' ')
+  //     .trim()
 
   const leaderBoardSelectorEntries = Object.entries(LEARDERBOARD_SELECTORS)
   const leaderboard = []
@@ -59,7 +59,7 @@ async function getLearderboard() {
         const cleanValue = clearText(rawValue)
         // transformandoa numero
         // const value = Number.isNaN(Number(cleanValue)) ? cleanValue : Number(cleanValue)
-        const value = typeOf === 'number' ? Number(cleanValue) : cleanValue
+        const value = typeOf === 'number' ? Number(cleanValue) : cleanValue // convierte a numero
         return [key, value]
       }
     )
