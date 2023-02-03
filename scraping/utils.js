@@ -7,8 +7,8 @@ export const URLS = {
 
 export const clearText = (text) =>
     text
-      .replace(/\t|\n|\s:/g, '')
-      .replace(/.*:/g, ' ')
+      .replace(/\t|\n|\s:/g, '') // quita los tabuladores, salto de linea y espacio antes de los ":"
+      .replace(/.*:/g, ' ') // quita todo lo que este antes de ":"
       .trim()
 
 export async function scrape(url) {
