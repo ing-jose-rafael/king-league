@@ -1,9 +1,9 @@
 name: Scrape Kings League Infojobs Website
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # para tener un btn
     
-  repository_dispatch:
+  repository_dispatch: # para poder ejecutarlo desde linea de comando
     type:
       - webhook
 
