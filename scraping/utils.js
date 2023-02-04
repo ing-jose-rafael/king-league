@@ -13,6 +13,6 @@ export const clearText = (text) =>
 
 export async function scrape(url) {
   const res = await fetch(url)
-  const html = await res.text()
-  return cheerio.load(html)
+  const html = await res.text() // transforma el resultado en un texto plano
+  return cheerio.load(html) // cheerio: biblioteca que nos devuelve un selector $ para recuperar los elementos
 }
