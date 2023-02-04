@@ -7,9 +7,9 @@ on:
 
 jobs:
 
-  test:
+  test: # test es el nombre se puede poner cualquier nombre
     runs-on: ubuntu-22.04
-    name: Execute tests
+    name: Execute tests # nombre descriptivo
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
