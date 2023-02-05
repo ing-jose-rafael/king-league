@@ -1,8 +1,17 @@
 
 import * as cheerio from 'cheerio'
-export const URLS = {
-  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
-  mvp: 'https://kingsleague.pro/estadisticas/mvp/'
+import { writeDBFile } from '../db/index.js'
+
+import { getLearderboard } from './leaderboard'
+import { logError, logInfo, logSuccess } from './log'
+import { getMVPList } from './mvp'
+
+export const SCRAPINGS = {
+  leaderboard: {
+		url: 'https://kingsleague.pro/estadisticas/clasificacion/',
+		scraper: getLearderboard
+	},
+  mvp: { url: 'https://kingsleague.pro/estadisticas/mvp/', scraper: getMVPList }
 }
 
 export const clearText = (text) =>
@@ -15,4 +24,28 @@ export async function scrape(url) {
   const res = await fetch(url)
   const html = await res.text() // transforma el resultado en un texto plano
   return cheerio.load(html) // cheerio: biblioteca que nos devuelve un selector $ para recuperar los elementos
+}
+
+export async function scrapeAndSave(name) {
+	const start = performance.now() // <--- punto inicio
+
+	try {
+		const { scraper, url } = SCRAPINGS[name]
+
+		logInfo(`Scraping [${name}]...`)
+		const $ = url ? await scrape(url) : null // llamado la funcion scrape de este mismo archivo
+		const content = await scraper($)
+		logSuccess(`[${name}] scraped successfully`)
+
+		logInfo(`Writing [${name}] to database...`)
+		await writeDBFile(name, content)
+		logSuccess(`[${name}] written successfully`)
+	} catch (e) {
+		logError(`Error scraping [${name}]`)
+		logError(e)
+	} finally {
+		const end = performance.now() // <--- fin
+		const time = (end - start) / 1000
+		logInfo(`[${name}] scraped in ${time} seconds`)
+	}
 }
