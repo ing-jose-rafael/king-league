@@ -1,7 +1,7 @@
 [
   {
     "wins": 3,
-    "loses": 1,
+    "losses": 1,
     "scoredGoals": 11,
     "concededGoals": 5,
     "cardsYellow": 6,
@@ -27,7 +27,7 @@
   },
   {
     "wins": 3,
-    "loses": 1,
+    "losses": 1,
     "scoredGoals": 14,
     "concededGoals": 9,
     "cardsYellow": 1,
@@ -53,7 +53,7 @@
   },
   {
     "wins": 3,
-    "loses": 1,
+    "losses": 1,
     "scoredGoals": 14,
     "concededGoals": 10,
     "cardsYellow": 1,
@@ -80,7 +80,7 @@
   },
   {
     "wins": 3,
-    "loses": 1,
+    "losses": 1,
     "scoredGoals": 14,
     "concededGoals": 12,
     "cardsYellow": 1,
@@ -90,7 +90,7 @@
       "name": "1K FC",
       "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg",
       "url": "",
-      "channel": "https://www.youtube.com/@IkerCasillas",
+      "channel": "https://www.twitch.tv/ikercasillas",
       "coach": "???",
       "socialNetworks": [
         "https://www.instagram.com/1kfutbolclub/?hl=es",
@@ -109,7 +109,7 @@
   },
   {
     "wins": 3,
-    "loses": 1,
+    "losses": 1,
     "scoredGoals": 7,
     "concededGoals": 5,
     "cardsYellow": 6,
@@ -135,7 +135,7 @@
   },
   {
     "wins": 2,
-    "loses": 2,
+    "losses": 2,
     "scoredGoals": 13,
     "concededGoals": 9,
     "cardsYellow": 2,
@@ -164,7 +164,7 @@
   },
   {
     "wins": 2,
-    "loses": 2,
+    "losses": 2,
     "scoredGoals": 8,
     "concededGoals": 10,
     "cardsYellow": 1,
@@ -190,7 +190,7 @@
   },
   {
     "wins": 2,
-    "loses": 2,
+    "losses": 2,
     "scoredGoals": 8,
     "concededGoals": 10,
     "cardsYellow": 3,
@@ -216,7 +216,7 @@
   },
   {
     "wins": 2,
-    "loses": 2,
+    "losses": 2,
     "scoredGoals": 12,
     "concededGoals": 15,
     "cardsYellow": 2,
@@ -245,7 +245,7 @@
   },
   {
     "wins": 1,
-    "loses": 3,
+    "losses": 3,
     "scoredGoals": 10,
     "concededGoals": 14,
     "cardsYellow": 1,
@@ -274,7 +274,7 @@
   },
   {
     "wins": 0,
-    "loses": 4,
+    "losses": 4,
     "scoredGoals": 9,
     "concededGoals": 15,
     "cardsYellow": 3,
@@ -303,7 +303,7 @@
   },
   {
     "wins": 0,
-    "loses": 4,
+    "losses": 4,
     "scoredGoals": 5,
     "concededGoals": 11,
     "cardsYellow": 5,
