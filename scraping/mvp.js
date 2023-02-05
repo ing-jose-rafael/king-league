@@ -3,6 +3,7 @@
  * TEAMS: para leer toda la info que tiene los equipos
  */
 import { TEAMS, writeDBFile } from '../db/index.js'
+import { logError, logInfo, logSuccess } from './log.js'
 import { URLS, scrape, clearText } from './utils.js'
 
 const MVP_SELECTORS = {
@@ -12,9 +13,9 @@ const MVP_SELECTORS = {
 	mvps: { selector: '.fs-table-text_6', typeOf: 'number' }
 }
 
-async function getMVPList () {
+export async function getMVPList ($) {
 	// escrapeando la informacion de la pagina  https://kingsleague.pro/estadisticas/mvp/
-	const $ = await scrape(URLS.mvp)
+	// const $ = await scrape(URLS.mvp)
 	const $rows = $('table tbody tr')
 
 	const getImageFromTeam = ({ name }) => {
@@ -23,7 +24,7 @@ async function getMVPList () {
 		)
 		return image
 	}
-	// convierte un objeto a un arraye de [key, value]
+	// convierte un objeto a un arraye de [key, value] para luego iterarlo con eñ map
 	const mvpSelectorEntries = Object.entries(MVP_SELECTORS)
 	const mvpList = []
 
@@ -53,7 +54,3 @@ async function getMVPList () {
 	})
 	return mvpList
 }
-
-const mvpList = await getMVPList()
-// escribiendo en el fichero
-await writeDBFile('mvpList', mvpList)

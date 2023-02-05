@@ -1,4 +1,5 @@
 import { TEAMS, writeDBFile, PRESIDENTS } from '../db/index.js'
+import { logInfo, logSuccess, logError } from './log.js'
 import { clearText, scrape, URLS } from './utils.js'
 
 // const DB_PATH = path.join(process.cwd(), './db/')
@@ -17,21 +18,20 @@ import { clearText, scrape, URLS } from './utils.js'
 //   return cheerio.load(html)
 // }
 
-async function getLearderboard() {
-  const $ = await scrape(URLS.leaderboard)
+const LEARDERBOARD_SELECTORS = {
+	team: { selector: '.fs-table-text_3', typeOf: 'string' },
+	wins: { selector: '.fs-table-text_4', typeOf: 'number' },
+	losses: { selector: '.fs-table-text_5', typeOf: 'number' },
+	scoredGoals: { selector: '.fs-table-text_6', typeOf: 'number' },
+	concededGoals: { selector: '.fs-table-text_7', typeOf: 'number' },
+	cardsYellow: { selector: '.fs-table-text_8', typeOf: 'number' },
+	cardsRed: { selector: '.fs-table-text_9', typeOf: 'number' }
+}
+
+export async function getLearderboard($) {
   const $rows = $('table tbody tr')
 
   // const LEARDERBOARD_SELECTORS_PREFIX = $('table tbody tr')
-
-  const LEARDERBOARD_SELECTORS = {
-    team: { selector: '.fs-table-text_3', typeOf: 'string' },
-    wins: { selector: '.fs-table-text_4', typeOf: 'number' },
-    losses: { selector: '.fs-table-text_5', typeOf: 'number' },
-    scoredGoals: { selector: '.fs-table-text_6', typeOf: 'number' },
-    concededGoals: { selector: '.fs-table-text_7', typeOf: 'number' },
-    cardsYellow: { selector: '.fs-table-text_8', typeOf: 'number' },
-    cardsRed: { selector: '.fs-table-text_9', typeOf: 'number' }
-  }
 
   const getTeamFrom = ({ name }) => {
     const { presidentId, ...restOfteam } = TEAMS.find(
@@ -78,10 +78,11 @@ async function getLearderboard() {
   return leaderboard
 }
 
-const leaderboard = await getLearderboard()
+// const leaderboard = await getLearderboard()
+
 // const filePath = path.join(process.cwd(), './db', 'learderboard.json')
 
 // console.log(filePath)
 // await writeFile(`${DB_PATH}/leaderboard.json`, JSON.stringify(leaderboard, null, 2), 'utf-8')
 // await writeFile(`${DB_PATH}/leaderboard.json`, JSON.stringify(leaderboard, null, 2), 'utf-8')
-await writeDBFile('leaderboard', leaderboard)
+// await writeDBFile('leaderboard', leaderboard)
