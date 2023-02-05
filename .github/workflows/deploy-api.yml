@@ -10,6 +10,8 @@ jobs:
   test: # test es el nombre se puede poner cualquier nombre
     runs-on: ubuntu-22.04
     name: Execute tests # nombre descriptivo
+    if: github.ref_name == 'main'
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -18,11 +20,23 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 7.26.3
-          run_install: |
-            - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
-            - args: [--global, gulp, prettier, typescript]
-      - run: pnpm test
+          run_install: false
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
+      - name: Execute Tests    
+        run: pnpm test
 
   deploy:
     needs: test
