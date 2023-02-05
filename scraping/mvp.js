@@ -2,9 +2,8 @@
  * writeDBFile: fichro para escribir el archivo .json.
  * TEAMS: para leer toda la info que tiene los equipos
  */
-import { TEAMS, writeDBFile } from '../db/index.js'
-import { logError, logInfo, logSuccess } from './log.js'
-import { URLS, scrape, clearText } from './utils.js'
+import { TEAMS } from '../db/index.js'
+import { clearText } from './utils.js'
 
 const MVP_SELECTORS = {
 	team: { selector: '.fs-table-text_3', typeOf: 'string' },

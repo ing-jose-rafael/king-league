@@ -1,6 +1,5 @@
-import { TEAMS, writeDBFile, PRESIDENTS } from '../db/index.js'
-import { logInfo, logSuccess, logError } from './log.js'
-import { clearText, scrape, URLS } from './utils.js'
+import { TEAMS, PRESIDENTS } from '../db/index.js'
+import { clearText } from './utils.js'
 
 // const DB_PATH = path.join(process.cwd(), './db/')
 // const TEAMS = await readFile(`${DB_PATH}/teams.json`, 'utf-8').then(JSON.parse)
