@@ -1,10 +1,9 @@
-
 import * as cheerio from 'cheerio'
-import { writeDBFile } from '../db/index.js'
 
-import { getLearderboard } from './leaderboard'
-import { logError, logInfo, logSuccess } from './log'
-import { getMVPList } from './mvp'
+import { writeDBFile } from '../db/index.js'
+import { logError, logInfo, logSuccess } from './log.js'
+import { getLearderboard } from './leaderboard.js'
+import { getMVPList } from './mvp.js'
 
 export const SCRAPINGS = {
   leaderboard: {
