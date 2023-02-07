@@ -7,4 +7,4 @@ for (const infoToScrape of Object.keys(SCRAPINGS)) {
 // scraper paralelo (la página nos puede sacar)
 // await Promise.all([scrapeAndSave('leaderboard'), scrapeAndSave('mvp')])
 
-// await scrapeAndSave('mvp')
+// await scrapeAndSave('coachs')
