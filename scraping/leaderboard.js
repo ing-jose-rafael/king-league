@@ -1,5 +1,5 @@
 import { TEAMS, PRESIDENTS } from '../db/index.js'
-import { clearText } from './utils.js'
+import { cleanText } from './utils.js'
 
 // const DB_PATH = path.join(process.cwd(), './db/')
 // const TEAMS = await readFile(`${DB_PATH}/teams.json`, 'utf-8').then(JSON.parse)
@@ -55,7 +55,7 @@ export async function getLearderboard($) {
       ([key, { selector, typeOf }]) => {
         // const selector = `${LEARDERBOARD_SELECTORS_PREFIX} ${specificSelector}`
         const rawValue = $(el).find(selector).text()
-        const cleanValue = clearText(rawValue)
+        const cleanValue = cleanText(rawValue)
         // transformandoa numero
         // const value = Number.isNaN(Number(cleanValue)) ? cleanValue : Number(cleanValue)
         const value = typeOf === 'number' ? Number(cleanValue) : cleanValue // convierte a numero

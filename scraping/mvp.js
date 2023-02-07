@@ -3,7 +3,7 @@
  * TEAMS: para leer toda la info que tiene los equipos
  */
 import { TEAMS } from '../db/index.js'
-import { clearText } from './utils.js'
+import { cleanText } from './utils.js'
 
 const MVP_SELECTORS = {
 	team: { selector: '.fs-table-text_3', typeOf: 'string' },
@@ -33,7 +33,7 @@ export async function getMVPList ($) {
 			([key, { selector, typeOf }]) => {
 				const rawValue = $(el).find(selector).text()
 				// limpiar el string, espacio que tiene en el HTML
-				const cleanedValue = clearText(rawValue)
+				const cleanedValue = cleanText(rawValue)
 
 				const value = typeOf === 'number' ? Number(cleanedValue) : cleanedValue
 

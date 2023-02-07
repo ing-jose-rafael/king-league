@@ -1,5 +1,5 @@
 import { TEAMS } from '../db/index.js'
-import { clearText } from './utils.js'
+import { cleanText } from './utils.js'
 
 const SCORES_SELECTORS = {
 	ranking: { selector: '.fs-table-text_1', typeOf: 'string' },
@@ -23,7 +23,7 @@ export async function getTopScoresList($) {
 	$rows.each((index, el) => {
 		const topScorerEntries = scoresSelectorEntries.map(([key, { selector, typeOf }]) => {
 			const rawValue = $(el).find(selector).text()
-			const cleanedValue = clearText(rawValue)
+			const cleanedValue = cleanText(rawValue)
 
 			const value = typeOf === 'number' ? Number(cleanedValue) : cleanedValue
 
