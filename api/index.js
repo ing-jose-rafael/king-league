@@ -9,9 +9,12 @@ import { Hono } from 'hono'
  * Learn more at https://developers.cloudflare.com/workers/
  */
 import { serveStatic } from 'hono/serve-static.module'
+import coachs from '../db/coachs.json'
 import learderboard from '../db/leaderboard.json'
-import teams from '../db/teams.json'
+import mvp from '../db/mvp.json'
 import presidents from '../db/presidents.json'
+import teams from '../db/teams.json'
+import topScorer from '../db/top_scorer.json'
 
 const app = new Hono()
 
@@ -41,6 +44,7 @@ app.get('/', (ctx) =>
         ]
       }
     },
+
     {
       endpoint: '/presidents/:id',
       methods: ['GET'],
@@ -76,6 +80,42 @@ app.get('/', (ctx) =>
           }
         ]
       }
+    },
+		{
+      endpoint: '/mvp',
+      methods: ['GET'],
+      description: 'Returns kins leagues mvp',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/mvp'
+          }
+        ]
+      }
+    },
+		{
+      endpoint: '/top-scorer',
+      methods: ['GET'],
+      description: 'Returns kins leagues top scorer',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/top-scorer'
+          }
+        ]
+      }
+    },
+		{
+      endpoint: '/coachs',
+      methods: ['GET'],
+      description: 'Returns kins leagues coachs',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/coachs'
+          }
+        ]
+      }
     }
   ])
 )
@@ -105,6 +145,18 @@ app.get('/teams/:id', (ctx) => {
   return foundteam
     ? ctx.json(foundteam)
     : ctx.json({ message: 'Team not found' }, 404)
+})
+
+app.get('/coachs', (ctx) => {
+  return ctx.json(coachs)
+})
+
+app.get('/top-scorer', (ctx) => {
+	return ctx.json(topScorer)
+})
+
+app.get('/mvp', (ctx) => {
+	return ctx.json(mvp)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))
