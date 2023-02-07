@@ -9,6 +9,7 @@ import { Hono } from 'hono'
  * Learn more at https://developers.cloudflare.com/workers/
  */
 import { serveStatic } from 'hono/serve-static.module'
+import assists from '../db/assists.json'
 import coachs from '../db/coachs.json'
 import learderboard from '../db/leaderboard.json'
 import mvp from '../db/mvp.json'
@@ -116,6 +117,18 @@ app.get('/', (ctx) =>
           }
         ]
       }
+    },
+		{
+      endpoint: '/assists',
+      methods: ['GET'],
+      description: 'Returns kins leagues assists',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/assists'
+          }
+        ]
+      }
     }
   ])
 )
@@ -157,6 +170,10 @@ app.get('/top-scorer', (ctx) => {
 
 app.get('/mvp', (ctx) => {
 	return ctx.json(mvp)
+})
+
+app.get('/assists', (ctx) => {
+	return ctx.json(assists)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))

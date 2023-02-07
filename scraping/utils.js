@@ -6,6 +6,7 @@ import { getLearderboard } from './leaderboard.js'
 import { getMVPList } from './mvp.js'
 import { getCoaches } from './coachsForTeams.js'
 import { getTopScoresList } from './top_scorer.js'
+import { getAssists } from './assists.js'
 
 export const SCRAPINGS = {
   leaderboard: {
@@ -17,10 +18,14 @@ export const SCRAPINGS = {
 	top_scorer: {
 		url: 'https://kingsleague.pro/estadisticas/goles/',
 		scraper: getTopScoresList
+	},
+	assists: {
+		url: 'https://kingsleague.pro/estadisticas/asistencias/',
+		scraper: getAssists
 	}
 }
 
-export const clearText = (text) =>
+export const cleanText = (text) =>
     text
       .replace(/\t|\n|\s:/g, '') // quita los tabuladores, salto de linea y espacio antes de los ":"
       .replace(/.*:/g, ' ') // quita todo lo que este antes de ":"
