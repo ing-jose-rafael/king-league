@@ -10,7 +10,7 @@ import { Hono } from 'hono'
  */
 import { serveStatic } from 'hono/serve-static.module'
 import assists from '../db/assists.json'
-import coachs from '../db/coachs.json'
+import coachs from '../db/coaches.json'
 import learderboard from '../db/leaderboard.json'
 import mvp from '../db/mvp.json'
 import presidents from '../db/presidents.json'
