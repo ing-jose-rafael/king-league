@@ -18,3 +18,8 @@ export async function writeDBFile(dbName, data) {
     'utf-8'
   )
 }
+
+export function getImageFromTeam({ name }) {
+	const { image } = TEAMS.find((team) => team.name === name)
+	return image
+}

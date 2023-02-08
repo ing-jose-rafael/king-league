@@ -2,7 +2,7 @@
  * writeDBFile: fichro para escribir el archivo .json.
  * TEAMS: para leer toda la info que tiene los equipos
  */
-import { TEAMS } from '../db/index.js'
+import { getImageFromTeam } from '../db/index.js'
 import { cleanText } from './utils.js'
 
 const MVP_SELECTORS = {
@@ -17,12 +17,6 @@ export async function getMVPList ($) {
 	// const $ = await scrape(URLS.mvp)
 	const $rows = $('table tbody tr')
 
-	const getImageFromTeam = ({ name }) => {
-		const { image } = TEAMS.find(
-			(team) => team.name === name
-		)
-		return image
-	}
 	// convierte un objeto a un arraye de [key, value] para luego iterarlo con eñ map
 	const mvpSelectorEntries = Object.entries(MVP_SELECTORS)
 	const mvpList = []

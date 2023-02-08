@@ -1,4 +1,4 @@
-import { TEAMS } from '../db/index.js'
+import { getImageFromTeam } from '../db/index.js'
 import { cleanText } from './utils.js'
 
 const ASSISTS_SELECTORS = {
@@ -11,12 +11,12 @@ const ASSISTS_SELECTORS = {
 export async function getAssists($) {
 	const $rows = $('table tbody tr')
 
-	const getImageFromTeam = ({ name }) => {
-		const { image } = TEAMS.find(
-			(team) => team.name === name
-		)
-		return image
-	}
+	// const getImageFromTeam = ({ name }) => {
+	// 	const { image } = TEAMS.find(
+	// 		(team) => team.name === name
+	// 	)
+	// 	return image
+	// }
 
 	const assistsSelectorEntries = Object.entries(ASSISTS_SELECTORS)
 	const assists = []
