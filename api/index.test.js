@@ -5,11 +5,7 @@ import { unstable_dev as unstableDev } from 'wrangler'
 import { describe, expect, it, beforeAll, afterAll } from 'vitest'
 
 const setup = async () => {
-  const worker = await unstableDev(
-    'api/index.js',
-    {},
-    { disableExperimentalWarning: true }
-  )
+  const worker = await unstableDev('api/index.js', { experimental: { disableExperimentalWarning: true } })
   return worker
 }
 
