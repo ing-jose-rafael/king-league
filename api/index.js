@@ -129,6 +129,18 @@ app.get('/', (ctx) =>
           }
         ]
       }
+    },
+		{
+      endpoint: '/eeeee',
+      methods: ['GET'],
+      description: 'Returns kins leagues eeee',
+      _links: {
+        self: [
+          {
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/assists'
+          }
+        ]
+      }
     }
   ])
 )
