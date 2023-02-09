@@ -5,7 +5,7 @@ import { logError, logInfo, logSuccess } from './log.js'
 import { getLearderboard } from './leaderboard.js'
 import { getMVPList } from './mvp.js'
 import { getCoaches } from './coaches.js'
-import { getTopScoresList } from './top_scorer.js'
+import { getTopScorersList } from './top_scorer.js'
 import { getAssists } from './assists.js'
 
 export const SCRAPINGS = {
@@ -17,7 +17,7 @@ export const SCRAPINGS = {
 	coaches: { url: 'https://es.besoccer.com/competicion/info/kings-league/2023', scraper: getCoaches },
 	top_scorer: {
 		url: 'https://kingsleague.pro/estadisticas/goles/',
-		scraper: getTopScoresList
+		scraper: getTopScorersList
 	},
 	assists: {
 		url: 'https://kingsleague.pro/estadisticas/asistencias/',

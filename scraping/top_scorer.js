@@ -1,7 +1,7 @@
 import { getImageFromTeam } from '../db/index.js'
 import { cleanText } from './utils.js'
 
-const SCORES_SELECTORS = {
+const SCORERS_SELECTORS = {
 	ranking: { selector: '.fs-table-text_1', typeOf: 'string' },
 	team: { selector: '.fs-table-text_3', typeOf: 'string' },
 	playerName: { selector: '.fs-table-text_4', typeOf: 'string' },
@@ -9,10 +9,10 @@ const SCORES_SELECTORS = {
 	goals: { selector: '.fs-table-text_6', typeOf: 'number' }
 }
 
-export async function getTopScoresList($) {
+export async function getTopScorersList($) {
 	const $rows = $('table tbody tr')
 
-	const scoresSelectorEntries = Object.entries(SCORES_SELECTORS)
+	const scoresSelectorEntries = Object.entries(SCORERS_SELECTORS)
 	const topScoresList = []
 
 	$rows.each((index, el) => {
