@@ -9,7 +9,7 @@ jobs:
 
   test: # test es el nombre se puede poner cualquier nombre
     runs-on: ubuntu-22.04
-    name: Execute tests # nombre descriptivo
+    name: Testing # nombre descriptivo
     # if: github.ref_name == 'main'
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }} # Only execute if the push is from the main repo
     timeout-minutes: 5
@@ -42,7 +42,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-22.04
-    name: Deploy API to Cloudflare Workers
+    name: Deploy API
     # if: ${{ github.event.pull_request.head.repo.full_name == github.repository }} # Only deploy if the push is from the main repo
     steps:
       - uses: actions/checkout@v3
