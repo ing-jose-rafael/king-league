@@ -131,7 +131,7 @@ app.get('/', (ctx) =>
       }
     },
 		{
-      endpoint: '/eeeee',
+      endpoint: '/eeeeeggff',
       methods: ['GET'],
       description: 'Returns kins leagues eeee',
       _links: {
