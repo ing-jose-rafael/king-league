@@ -36,7 +36,7 @@ export async function getAssists($) {
 
 		assists.push({
 			...assistsData,
-			rank: index + 1,
+			ranking: index + 1,
 			team: teamName,
 			image
 		})
