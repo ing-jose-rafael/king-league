@@ -1,32 +1,114 @@
-import { cleanText, scrape } from './utils.js'
 import { TEAMS } from '../db/index.js'
+import { logInfo, logSuccess } from './log.js'
+import { cleanText, scrape } from './utils.js'
+import path from 'node:path'
+import { writeFile } from 'node:fs/promises'
 
-const base = 'https://kingsleague.pro/team/'
+const STATICS_PATH = path.join(process.cwd(), './assets/static')
+const DB_PATH = path.join(process.cwd(), './db/')
+const BASE_URL = 'https://kingsleague.pro/team'
 
-const URL_POSFIX = TEAMS.map(team => team.id)
+const SELECTORS = {
+	name: '.el-title',
+	role: '.el-content',
+	image: '.el-image'
+}
+// este archivo solo se ejeutara una vez
+async function getTeams() {
+	const teams = []
 
-let teams
-const data = []
+	// scraper and save image
+	const saveImage = async ({ url, folder, fileName }) => {
+		const fileExtension = url.split('.').at(-1)
 
-URL_POSFIX.forEach(async (posfix) => {
-	const url = base + posfix
-	const $ = await scrape(url)
-	const $list = $('ul.uk-slider-items li')
+		logInfo(`Fetching image for file name: ${fileName}`)
+		const responseImage = await fetch(url)
+		const arrayBuffer = await responseImage.arrayBuffer()
+		const buffer = Buffer.from(arrayBuffer)
 
-	teams = []
+		logInfo(`Writing image to disk ${fileName}`)
+		const imageFileName = `${fileName}.${fileExtension}`
+		const imageFilePath = path.join(STATICS_PATH, folder, imageFileName)
+		await writeFile(imageFilePath, buffer)
 
-	$list.each((index, el) => {
-		const $el = $(el)
-		const name = cleanText($el.find('h3').text())
-		$el.find('div.el-content span').text('')
-		const role = $el.find('div.el-content').text()
+		logInfo(`Everything is done! ${fileName}`)
+
+		return imageFileName
+	}
+
+	const onlyLettersString = (s) => {
+		const regex = /[^a-zA-Z ]/
+		return s.replace(regex, '')
+	}
+
+	const convertStringToKebabCase = (s) => {
+		const onlyLetters = onlyLettersString(s)
+		const lowerCase = onlyLetters.toLowerCase()
+		const rawWords = lowerCase.split(' ')
+		const words = rawWords.filter((word) => word !== '')
+		return words.join('-')
+	}
+
+	// iterando los TEAMS
+	for (const team of TEAMS) {
+		const { id: teamId, name } = team
+		const players = []
+
+		logInfo(`\tScraping team: ${name}`)
+		const url = `${BASE_URL}/${teamId}`
+		const $ = await scrape(url)
+		const $lis = $('ul.uk-slider-items li')
+
+		for (const el of $lis) {
+			const $el = $(el)
+
+			const nameRawValue = $el.find(SELECTORS.name).text()
+			const name = cleanText(nameRawValue)
+
+			const $role = $el.find(SELECTORS.role)
+			// .el-content > "" + span
+			// .el-content > p > "" + span. Los jugadores tiene la etiqueta de parrafo
+			// evalua si dentro del div esta un <p></p> y un <span></span>
+			const roleRawValue =
+				$role.contents().length > 1
+					? $role.contents().first().text()
+					: $role.find('p').contents().first().text()
+			const role = cleanText(roleRawValue)
+			const roleLowerCase = role.toLowerCase()
+
+			if (roleLowerCase !== 'presidente' && roleLowerCase !== 'entrenador') {
+				const url = $el.find(SELECTORS.image).attr('src')
+				const nameKebabCase = convertStringToKebabCase(name)
+				const fileName = `${teamId}-${nameKebabCase}`
+				const image = await saveImage({ url, folder: 'players', fileName })
+
+				players.push({
+					name,
+					role,
+					image
+				})
+			} else if (roleLowerCase === 'entrenador') {
+				const url = $el.find(SELECTORS.image).attr('src')
+				const fileName = convertStringToKebabCase(name)
+				const image = await saveImage({ url, folder: 'coaches', fileName })
+
+				team.coachInfo = {
+					name,
+					image
+				}
+			}
+		}
 
 		teams.push({
-			teamMember: name,
-			role
+			...team,
+			players
 		})
-	})
 
-	data.push({ [posfix]: teams })
-	console.log(JSON.stringify(data, null, '  '))
-})
+		logSuccess(`\tTeam: ${name} finished!\n`)
+	}
+
+	return teams
+}
+
+const teams = await getTeams()
+await writeFile(`${DB_PATH}/teams.json`, JSON.stringify(teams, null, 2), 'utf-8')
