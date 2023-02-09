@@ -42,6 +42,7 @@ jobs:
     needs: test
     runs-on: ubuntu-22.04
     name: Deploy API
+    if: github.repository_owner == 'ing-jose-rafael'
     # if: ${{ github.event.pull_request.head.repo.full_name == github.repository }} # Only deploy if the push is from the main repo
     steps:
       - uses: actions/checkout@v3
