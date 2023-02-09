@@ -16,9 +16,10 @@ URL_POSFIX.forEach(async (posfix) => {
 	teams = []
 
 	$list.each((index, el) => {
-		const name = cleanText($(el).find('h3').text())
-		$(el).find('div.el-content span').text('')
-		const role = $(el).find('div.el-content').text()
+		const $el = $(el)
+		const name = cleanText($el.find('h3').text())
+		$el.find('div.el-content span').text('')
+		const role = $el.find('div.el-content').text()
 
 		teams.push({
 			teamMember: name,

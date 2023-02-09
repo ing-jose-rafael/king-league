@@ -25,7 +25,8 @@ export async function getMVPList ($) {
 		// iterando el Array
 		const mvpEntries = mvpSelectorEntries.map(
 			([key, { selector, typeOf }]) => {
-				const rawValue = $(el).find(selector).text()
+				const $el = $(el)
+				const rawValue = $el.find(selector).text()
 				// limpiar el string, espacio que tiene en el HTML
 				const cleanedValue = cleanText(rawValue)
 

@@ -54,7 +54,8 @@ export async function getLearderboard($) {
     const leaderBoardEntries = leaderBoardSelectorEntries.map(
       ([key, { selector, typeOf }]) => {
         // const selector = `${LEARDERBOARD_SELECTORS_PREFIX} ${specificSelector}`
-        const rawValue = $(el).find(selector).text()
+				const $el = $(el)
+        const rawValue = $el.find(selector).text()
         const cleanValue = cleanText(rawValue)
         // transformandoa numero
         // const value = Number.isNaN(Number(cleanValue)) ? cleanValue : Number(cleanValue)
