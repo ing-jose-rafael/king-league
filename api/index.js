@@ -15,7 +15,7 @@ import learderboard from '../db/leaderboard.json'
 import mvp from '../db/mvp.json'
 import presidents from '../db/presidents.json'
 import teams from '../db/teams.json'
-import topScorer from '../db/top_scores.json'
+import topScorer from '../db/top_scorers.json'
 
 const app = new Hono()
 
@@ -164,7 +164,7 @@ app.get('/coachs', (ctx) => {
   return ctx.json(coachs)
 })
 
-app.get('/top-scores', (ctx) => {
+app.get('/top-scorers', (ctx) => {
 	return ctx.json(topScorer)
 })
 
