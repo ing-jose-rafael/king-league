@@ -3,7 +3,7 @@
     "playerName": "A. Bueno",
     "gamesPlayed": 5,
     "assists": 4,
-    "rank": 1,
+    "ranking": 1,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -11,7 +11,7 @@
     "playerName": "J. Verdú «Gingko»",
     "gamesPlayed": 5,
     "assists": 4,
-    "rank": 2,
+    "ranking": 2,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -19,7 +19,7 @@
     "playerName": "Espinosa",
     "gamesPlayed": 4,
     "assists": 4,
-    "rank": 3,
+    "ranking": 3,
     "team": "Porcinos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
@@ -27,7 +27,7 @@
     "playerName": "H. Fraile",
     "gamesPlayed": 4,
     "assists": 4,
-    "rank": 4,
+    "ranking": 4,
     "team": "Porcinos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
@@ -35,7 +35,7 @@
     "playerName": "Pau ZZ",
     "gamesPlayed": 5,
     "assists": 3,
-    "rank": 5,
+    "ranking": 5,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -43,7 +43,7 @@
     "playerName": "Coro",
     "gamesPlayed": 5,
     "assists": 3,
-    "rank": 6,
+    "ranking": 6,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
   },
@@ -51,7 +51,7 @@
     "playerName": "Dani P.",
     "gamesPlayed": 5,
     "assists": 3,
-    "rank": 7,
+    "ranking": 7,
     "team": "Rayo de Barcelona",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/rayo-barcelona.svg"
   },
@@ -59,7 +59,7 @@
     "playerName": "Lautaro",
     "gamesPlayed": 4,
     "assists": 2,
-    "rank": 8,
+    "ranking": 8,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -67,7 +67,7 @@
     "playerName": "Galvany",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 9,
+    "ranking": 9,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -75,7 +75,7 @@
     "playerName": "F. Hernández",
     "gamesPlayed": 4,
     "assists": 2,
-    "rank": 10,
+    "ranking": 10,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -83,7 +83,7 @@
     "playerName": "Pau Mañé",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 11,
+    "ranking": 11,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -91,7 +91,7 @@
     "playerName": "Ros",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 12,
+    "ranking": 12,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -99,7 +99,7 @@
     "playerName": "Soriano",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 13,
+    "ranking": 13,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -107,7 +107,7 @@
     "playerName": "Dorado",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 14,
+    "ranking": 14,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -115,7 +115,7 @@
     "playerName": "Ruggeri",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 15,
+    "ranking": 15,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
   },
@@ -123,7 +123,7 @@
     "playerName": "X. Molas «Mimosa»",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 16,
+    "ranking": 16,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -131,7 +131,7 @@
     "playerName": "Franky P.",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 17,
+    "ranking": 17,
     "team": "Rayo de Barcelona",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/rayo-barcelona.svg"
   },
@@ -139,7 +139,7 @@
     "playerName": "Campu",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 18,
+    "ranking": 18,
     "team": "Saiyans FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
   },
@@ -147,7 +147,7 @@
     "playerName": "Gio Ferinu",
     "gamesPlayed": 3,
     "assists": 2,
-    "rank": 19,
+    "ranking": 19,
     "team": "Saiyans FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
   },
@@ -155,7 +155,7 @@
     "playerName": "Guti",
     "gamesPlayed": 4,
     "assists": 2,
-    "rank": 20,
+    "ranking": 20,
     "team": "Ultimate Móstoles",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/ultimate-mostoles.svg"
   },
@@ -163,7 +163,7 @@
     "playerName": "Poch",
     "gamesPlayed": 5,
     "assists": 2,
-    "rank": 21,
+    "ranking": 21,
     "team": "XBUYER TEAM",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/xbuyer.svg"
   },
@@ -171,7 +171,7 @@
     "playerName": "A. Barragán",
     "gamesPlayed": 1,
     "assists": 1,
-    "rank": 22,
+    "ranking": 22,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -179,7 +179,7 @@
     "playerName": "Román",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 23,
+    "ranking": 23,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -187,7 +187,7 @@
     "playerName": "Ricardo",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 24,
+    "ranking": 24,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -195,7 +195,7 @@
     "playerName": "Sorroche",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 25,
+    "ranking": 25,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -203,7 +203,7 @@
     "playerName": "Pluvins",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 26,
+    "ranking": 26,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
@@ -211,7 +211,7 @@
     "playerName": "Gilles V.",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 27,
+    "ranking": 27,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -219,7 +219,7 @@
     "playerName": "Bernat",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 28,
+    "ranking": 28,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -227,7 +227,7 @@
     "playerName": "Beguer",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 29,
+    "ranking": 29,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -235,7 +235,7 @@
     "playerName": "Jacobo",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 30,
+    "ranking": 30,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -243,7 +243,7 @@
     "playerName": "Jay",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 31,
+    "ranking": 31,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -251,7 +251,7 @@
     "playerName": "Alsina",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 32,
+    "ranking": 32,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -259,7 +259,7 @@
     "playerName": "Ibai",
     "gamesPlayed": 1,
     "assists": 1,
-    "rank": 33,
+    "ranking": 33,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -267,7 +267,7 @@
     "playerName": "Maca",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 34,
+    "ranking": 34,
     "team": "Jijantes FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   },
@@ -275,7 +275,7 @@
     "playerName": "Joan Inés",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 35,
+    "ranking": 35,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
   },
@@ -283,7 +283,7 @@
     "playerName": "Hidalgo",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 36,
+    "ranking": 36,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
   },
@@ -291,7 +291,7 @@
     "playerName": "D. Soriano «Olivo»",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 37,
+    "ranking": 37,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -299,7 +299,7 @@
     "playerName": "Noel L. «Ahuehuete»",
     "gamesPlayed": 4,
     "assists": 1,
-    "rank": 38,
+    "ranking": 38,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -307,7 +307,7 @@
     "playerName": "I. Nuevo «Ficus»",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 39,
+    "ranking": 39,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -315,7 +315,7 @@
     "playerName": "S. Sánchez «Drago»",
     "gamesPlayed": 2,
     "assists": 1,
-    "rank": 40,
+    "ranking": 40,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -323,7 +323,7 @@
     "playerName": "E. Álvaro «Roble»",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 41,
+    "ranking": 41,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -331,7 +331,7 @@
     "playerName": "C. Planas «Chopo»",
     "gamesPlayed": 2,
     "assists": 1,
-    "rank": 42,
+    "ranking": 42,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -339,7 +339,7 @@
     "playerName": "David García",
     "gamesPlayed": 1,
     "assists": 1,
-    "rank": 43,
+    "ranking": 43,
     "team": "PIO FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
@@ -347,7 +347,7 @@
     "playerName": "Pau Fer",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 44,
+    "ranking": 44,
     "team": "PIO FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
@@ -355,7 +355,7 @@
     "playerName": "Cokita",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 45,
+    "ranking": 45,
     "team": "PIO FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
@@ -363,7 +363,7 @@
     "playerName": "A. Ropero",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 46,
+    "ranking": 46,
     "team": "PIO FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
@@ -371,7 +371,7 @@
     "playerName": "Lao",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 47,
+    "ranking": 47,
     "team": "Porcinos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
@@ -379,7 +379,7 @@
     "playerName": "G. Cichero",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 48,
+    "ranking": 48,
     "team": "Porcinos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
@@ -387,7 +387,7 @@
     "playerName": "Kilian",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 49,
+    "ranking": 49,
     "team": "Porcinos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
@@ -395,7 +395,7 @@
     "playerName": "D. Vilà",
     "gamesPlayed": 5,
     "assists": 1,
-    "rank": 50,
+    "ranking": 50,
     "team": "Rayo de Barcelona",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/rayo-barcelona.svg"
   }

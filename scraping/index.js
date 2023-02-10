@@ -1,5 +1,5 @@
-import { writeDBFile } from 'db/index.js'
-import { getURLTeams } from './url_teams.js'
+// import { writeDBFile } from './db/index.js'
+// import { getURLTeams } from './url_teams.js'
 import { scrapeAndSave, SCRAPINGS } from './utils.js'
 
 // screper secuencial, para evitar que la página nos saque

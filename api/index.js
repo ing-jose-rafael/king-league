@@ -9,13 +9,13 @@ import { Hono } from 'hono'
  * Learn more at https://developers.cloudflare.com/workers/
  */
 import { serveStatic } from 'hono/serve-static.module'
-import assists from '../db/assists.json'
+import topAssists from '../db/top_assists.json'
 import coachs from '../db/coaches.json'
 import learderboard from '../db/leaderboard.json'
 import mvp from '../db/mvp.json'
 import presidents from '../db/presidents.json'
 import teams from '../db/teams.json'
-import topScorer from '../db/top_scorer.json'
+import topScorer from '../db/top_scores.json'
 
 const app = new Hono()
 
@@ -173,7 +173,7 @@ app.get('/mvp', (ctx) => {
 })
 
 app.get('/assists', (ctx) => {
-	return ctx.json(assists)
+	return ctx.json(topAssists)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))

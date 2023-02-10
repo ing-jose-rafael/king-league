@@ -15,11 +15,11 @@ export const SCRAPINGS = {
 	},
   mvp: { url: 'https://kingsleague.pro/estadisticas/mvp/', scraper: getMVPList },
 	coaches: { url: 'https://es.besoccer.com/competicion/info/kings-league/2023', scraper: getCoaches },
-	top_scorer: {
+	top_scores: {
 		url: 'https://kingsleague.pro/estadisticas/goles/',
 		scraper: getTopScorersList
 	},
-	assists: {
+	top_assists: {
 		url: 'https://kingsleague.pro/estadisticas/asistencias/',
 		scraper: getAssists
 	}
