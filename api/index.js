@@ -95,13 +95,13 @@ app.get('/', (ctx) =>
       }
     },
 		{
-      endpoint: '/top-scorer',
+      endpoint: '/top-scores',
       methods: ['GET'],
       description: 'Returns kins leagues top scorer',
       _links: {
         self: [
           {
-            href: 'https://kings-league-api.ing-jcarreno.workers.dev/top-scorer'
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/top-scores'
           }
         ]
       }
@@ -119,13 +119,13 @@ app.get('/', (ctx) =>
       }
     },
 		{
-      endpoint: '/assists',
+      endpoint: '/top-assists',
       methods: ['GET'],
       description: 'Returns kins leagues assists',
       _links: {
         self: [
           {
-            href: 'https://kings-league-api.ing-jcarreno.workers.dev/assists'
+            href: 'https://kings-league-api.ing-jcarreno.workers.dev/top-assists'
           }
         ]
       }
@@ -164,7 +164,7 @@ app.get('/coachs', (ctx) => {
   return ctx.json(coachs)
 })
 
-app.get('/top-scorer', (ctx) => {
+app.get('/top-scores', (ctx) => {
 	return ctx.json(topScorer)
 })
 
@@ -172,7 +172,7 @@ app.get('/mvp', (ctx) => {
 	return ctx.json(mvp)
 })
 
-app.get('/assists', (ctx) => {
+app.get('/top-assists', (ctx) => {
 	return ctx.json(topAssists)
 })
 
