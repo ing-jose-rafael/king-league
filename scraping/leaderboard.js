@@ -70,8 +70,9 @@ export async function getLearderboard($) {
     const team = getTeamFrom({ name: teamName })
 
     leaderboard.push({
-      ...leaderboardForTeam,
-      team
+			...leaderboardForTeam,
+      team,
+			rank: index + 1
     })
     // leaderboard.push(Object.fromEntries(leaderBoardEntries))
   })
