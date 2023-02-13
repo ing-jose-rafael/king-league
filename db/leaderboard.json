@@ -83,7 +83,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/thegrefg.png",
         "teamId": "saiyans-fc"
       }
-    }
+    },
+    "rank": 1
   },
   {
     "wins": 0,
@@ -170,7 +171,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/ibai-llanos.png",
         "teamId": "porcinos-fc"
       }
-    }
+    },
+    "rank": 2
   },
   {
     "wins": 4,
@@ -256,7 +258,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/kun-aguero.png",
         "teamId": "kunisports"
       }
-    }
+    },
+    "rank": 3
   },
   {
     "wins": 1,
@@ -345,7 +348,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/perxitaa.png",
         "teamId": "los-troncos-fc"
       }
-    }
+    },
+    "rank": 4
   },
   {
     "wins": 0,
@@ -431,7 +435,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/djmariio.png",
         "teamId": "ultimate-mostoles"
       }
-    }
+    },
+    "rank": 5
   },
   {
     "wins": 3,
@@ -520,7 +525,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/iker-casillas.png",
         "teamID": "1k"
       }
-    }
+    },
+    "rank": 6
   },
   {
     "wins": 3,
@@ -606,7 +612,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/juan-guarnizo.png",
         "teamId": "aniquiladores-fc"
       }
-    }
+    },
+    "rank": 7
   },
   {
     "wins": 3,
@@ -692,7 +699,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/hnos-buyer.png",
         "teamId": "xbuyer-team"
       }
-    }
+    },
+    "rank": 8
   },
   {
     "wins": 2,
@@ -781,7 +789,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/adri-contreras.png",
         "teamId": "el-barrio"
       }
-    }
+    },
+    "rank": 9
   },
   {
     "wins": 2,
@@ -870,7 +879,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/spursito.png",
         "teamId": "rayo-barcelona"
       }
-    }
+    },
+    "rank": 10
   },
   {
     "wins": 1,
@@ -957,7 +967,8 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/rivers.png",
         "teamId": "pio-fc"
       }
-    }
+    },
+    "rank": 11
   },
   {
     "wins": 0,
@@ -1046,6 +1057,7 @@
         "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/gerard-romero.png",
         "teamId": "jijantes-fc"
       }
-    }
+    },
+    "rank": 12
   }
 ]
