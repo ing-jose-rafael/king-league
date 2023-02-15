@@ -1,22 +1,22 @@
 [
   {
-    "playerName": "A. Bueno",
-    "gamesPlayed": 5,
-    "assists": 4,
-    "rank": 1,
-    "team": "1K FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
-  },
-  {
     "playerName": "J. Verdú «Gingko»",
     "gamesPlayed": 5,
-    "assists": 4,
-    "rank": 2,
+    "assists": 5,
+    "rank": 1,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
   {
-    "playerName": "Espinosa",
+    "playerName": "A. Bueno",
+    "gamesPlayed": 5,
+    "assists": 4,
+    "rank": 2,
+    "team": "1K FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
+  },
+  {
+    "playerName": "H. Fraile",
     "gamesPlayed": 4,
     "assists": 4,
     "rank": 3,
@@ -24,18 +24,10 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "H. Fraile",
-    "gamesPlayed": 4,
-    "assists": 4,
-    "rank": 4,
-    "team": "Porcinos FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
-  },
-  {
     "playerName": "Pau ZZ",
     "gamesPlayed": 5,
     "assists": 3,
-    "rank": 5,
+    "rank": 4,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -43,9 +35,17 @@
     "playerName": "Coro",
     "gamesPlayed": 5,
     "assists": 3,
-    "rank": 6,
+    "rank": 5,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
+  },
+  {
+    "playerName": "Espinosa",
+    "gamesPlayed": 4,
+    "assists": 3,
+    "rank": 6,
+    "team": "Porcinos FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
   {
     "playerName": "Dani P.",
