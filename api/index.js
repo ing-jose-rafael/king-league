@@ -85,7 +85,7 @@ app.get('/', (ctx) =>
 		{
       endpoint: '/mvp',
       methods: ['GET'],
-      description: 'Returns kins leagues mvp',
+      description: 'Returns Kings League Most Valuable Players',
       _links: {
         self: [
           {
