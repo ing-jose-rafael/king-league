@@ -370,16 +370,16 @@
   },
   {
     "ranking": "1",
-    "playerName": "Román",
-    "gamesPlayed": 6,
-    "goals": 1,
+    "playerName": "Corvo",
+    "gamesPlayed": 1,
+    "goals": 2,
     "rank": 42,
-    "team": "1K FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
+    "team": "PIO FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
   {
     "ranking": "1",
-    "playerName": "Sauras",
+    "playerName": "Román",
     "gamesPlayed": 6,
     "goals": 1,
     "rank": 43,
@@ -388,7 +388,7 @@
   },
   {
     "ranking": "1",
-    "playerName": "Pluvins",
+    "playerName": "Sauras",
     "gamesPlayed": 6,
     "goals": 1,
     "rank": 44,
@@ -397,7 +397,7 @@
   },
   {
     "ranking": "1",
-    "playerName": "Marino",
+    "playerName": "Pluvins",
     "gamesPlayed": 6,
     "goals": 1,
     "rank": 45,
@@ -406,10 +406,19 @@
   },
   {
     "ranking": "1",
+    "playerName": "Marino",
+    "gamesPlayed": 6,
+    "goals": 1,
+    "rank": 46,
+    "team": "1K FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
+  },
+  {
+    "ranking": "1",
     "playerName": "Nadir",
     "gamesPlayed": 2,
     "goals": 1,
-    "rank": 46,
+    "rank": 47,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -418,7 +427,7 @@
     "playerName": "Goku",
     "gamesPlayed": 1,
     "goals": 1,
-    "rank": 47,
+    "rank": 48,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -427,7 +436,7 @@
     "playerName": "Daniel P.",
     "gamesPlayed": 6,
     "goals": 1,
-    "rank": 48,
+    "rank": 49,
     "team": "Aniquiladores FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
@@ -436,17 +445,8 @@
     "playerName": "Beguer",
     "gamesPlayed": 6,
     "goals": 1,
-    "rank": 49,
+    "rank": 50,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
-  },
-  {
-    "ranking": "1",
-    "playerName": "Ibai",
-    "gamesPlayed": 1,
-    "goals": 1,
-    "rank": 50,
-    "team": "Jijantes FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/jijantes-fc.svg"
   }
 ]
