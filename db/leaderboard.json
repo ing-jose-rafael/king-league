@@ -4,8 +4,8 @@
     "losses": 1,
     "scoredGoals": 27,
     "concededGoals": 17,
-    "cardsYellow": 1,
-    "cardsRed": 0,
+    "cardsYellow": 3,
+    "cardsRed": 1,
     "team": {
       "id": "porcinos-fc",
       "name": "Porcinos FC",
@@ -93,8 +93,8 @@
     "losses": 1,
     "scoredGoals": 15,
     "concededGoals": 7,
-    "cardsYellow": 3,
-    "cardsRed": 1,
+    "cardsYellow": 1,
+    "cardsRed": 0,
     "team": {
       "id": "saiyans-fc",
       "name": "Saiyans FC",
@@ -181,7 +181,7 @@
     "losses": 2,
     "scoredGoals": 22,
     "concededGoals": 17,
-    "cardsYellow": 1,
+    "cardsYellow": 2,
     "cardsRed": 0,
     "team": {
       "id": "ultimate-mostoles",
@@ -269,7 +269,7 @@
     "losses": 2,
     "scoredGoals": 15,
     "concededGoals": 14,
-    "cardsYellow": 2,
+    "cardsYellow": 1,
     "cardsRed": 0,
     "team": {
       "id": "kunisports",
@@ -357,7 +357,7 @@
     "losses": 4,
     "scoredGoals": 22,
     "concededGoals": 15,
-    "cardsYellow": 1,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "el-barrio",
@@ -448,7 +448,7 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 22,
-    "cardsYellow": 0,
+    "cardsYellow": 1,
     "cardsRed": 0,
     "team": {
       "id": "1k",
@@ -539,7 +539,7 @@
     "losses": 4,
     "scoredGoals": 19,
     "concededGoals": 21,
-    "cardsYellow": 1,
+    "cardsYellow": 3,
     "cardsRed": 0,
     "team": {
       "id": "aniquiladores-fc",
@@ -627,7 +627,7 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 23,
-    "cardsYellow": 0,
+    "cardsYellow": 2,
     "cardsRed": 0,
     "team": {
       "id": "rayo-barcelona",
@@ -718,7 +718,7 @@
     "losses": 4,
     "scoredGoals": 16,
     "concededGoals": 21,
-    "cardsYellow": 3,
+    "cardsYellow": 1,
     "cardsRed": 0,
     "team": {
       "id": "xbuyer-team",
@@ -806,8 +806,8 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 26,
-    "cardsYellow": 2,
-    "cardsRed": 1,
+    "cardsYellow": 0,
+    "cardsRed": 0,
     "team": {
       "id": "los-troncos-fc",
       "name": "Los Troncos FC",
