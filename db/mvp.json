@@ -1,19 +1,19 @@
 [
   {
+    "playerName": "F. Hernández",
+    "gamesPlayed": 6,
+    "mvps": 3,
+    "rank": 1,
+    "team": "Aniquiladores FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
+  },
+  {
     "playerName": "A. Bueno",
     "gamesPlayed": 7,
     "mvps": 2,
-    "rank": 1,
+    "rank": 2,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
-  },
-  {
-    "playerName": "F. Hernández",
-    "gamesPlayed": 6,
-    "mvps": 2,
-    "rank": 2,
-    "team": "Aniquiladores FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg"
   },
   {
     "playerName": "Ubón",
@@ -104,15 +104,15 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
   {
-    "playerName": "Lao",
+    "playerName": "David García",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 14,
-    "team": "Porcinos FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
+    "team": "PIO FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   },
   {
-    "playerName": "G. Cichero",
+    "playerName": "Lao",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 15,
@@ -120,15 +120,15 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "Briones",
+    "playerName": "G. Cichero",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 16,
-    "team": "Saiyans FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
+    "team": "Porcinos FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "R. Carbó",
+    "playerName": "Briones",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 17,
@@ -136,7 +136,7 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
   },
   {
-    "playerName": "Feliu",
+    "playerName": "R. Carbó",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 18,
@@ -144,15 +144,15 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
   },
   {
-    "playerName": "Arché",
+    "playerName": "Feliu",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 19,
-    "team": "Ultimate Móstoles",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/ultimate-mostoles.svg"
+    "team": "Saiyans FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/saiyans-fc.svg"
   },
   {
-    "playerName": "Juanma Glez",
+    "playerName": "Arché",
     "gamesPlayed": 7,
     "mvps": 1,
     "rank": 20,
@@ -160,10 +160,18 @@
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/ultimate-mostoles.svg"
   },
   {
+    "playerName": "Juanma Glez",
+    "gamesPlayed": 7,
+    "mvps": 1,
+    "rank": 21,
+    "team": "Ultimate Móstoles",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/ultimate-mostoles.svg"
+  },
+  {
     "playerName": "Enigma",
     "gamesPlayed": 2,
     "mvps": 1,
-    "rank": 21,
+    "rank": 22,
     "team": "XBUYER TEAM",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/xbuyer.svg"
   },
@@ -171,7 +179,7 @@
     "playerName": "Corvo",
     "gamesPlayed": 2,
     "mvps": 1,
-    "rank": 22,
+    "rank": 23,
     "team": "PIO FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/pio.svg"
   }
