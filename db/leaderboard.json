@@ -4,8 +4,8 @@
     "losses": 1,
     "scoredGoals": 27,
     "concededGoals": 17,
-    "cardsYellow": 3,
-    "cardsRed": 1,
+    "cardsYellow": 10,
+    "cardsRed": 0,
     "team": {
       "id": "porcinos-fc",
       "name": "Porcinos FC",
@@ -93,7 +93,7 @@
     "losses": 1,
     "scoredGoals": 15,
     "concededGoals": 7,
-    "cardsYellow": 1,
+    "cardsYellow": 8,
     "cardsRed": 0,
     "team": {
       "id": "saiyans-fc",
@@ -181,7 +181,7 @@
     "losses": 2,
     "scoredGoals": 22,
     "concededGoals": 17,
-    "cardsYellow": 2,
+    "cardsYellow": 5,
     "cardsRed": 0,
     "team": {
       "id": "ultimate-mostoles",
@@ -357,7 +357,7 @@
     "losses": 4,
     "scoredGoals": 22,
     "concededGoals": 15,
-    "cardsYellow": 0,
+    "cardsYellow": 7,
     "cardsRed": 0,
     "team": {
       "id": "el-barrio",
@@ -448,7 +448,7 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 22,
-    "cardsYellow": 1,
+    "cardsYellow": -2,
     "cardsRed": 0,
     "team": {
       "id": "1k",
@@ -539,7 +539,7 @@
     "losses": 4,
     "scoredGoals": 19,
     "concededGoals": 21,
-    "cardsYellow": 3,
+    "cardsYellow": -2,
     "cardsRed": 0,
     "team": {
       "id": "aniquiladores-fc",
@@ -627,7 +627,7 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 23,
-    "cardsYellow": 2,
+    "cardsYellow": -3,
     "cardsRed": 0,
     "team": {
       "id": "rayo-barcelona",
@@ -718,7 +718,7 @@
     "losses": 4,
     "scoredGoals": 16,
     "concededGoals": 21,
-    "cardsYellow": 1,
+    "cardsYellow": -5,
     "cardsRed": 0,
     "team": {
       "id": "xbuyer-team",
@@ -806,7 +806,7 @@
     "losses": 4,
     "scoredGoals": 20,
     "concededGoals": 26,
-    "cardsYellow": 0,
+    "cardsYellow": -6,
     "cardsRed": 0,
     "team": {
       "id": "los-troncos-fc",
@@ -897,7 +897,7 @@
     "losses": 5,
     "scoredGoals": 19,
     "concededGoals": 18,
-    "cardsYellow": 4,
+    "cardsYellow": 1,
     "cardsRed": 0,
     "team": {
       "id": "pio-fc",
@@ -986,7 +986,7 @@
     "losses": 7,
     "scoredGoals": 14,
     "concededGoals": 28,
-    "cardsYellow": 2,
+    "cardsYellow": -14,
     "cardsRed": 0,
     "team": {
       "id": "jijantes-fc",
