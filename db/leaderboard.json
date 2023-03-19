@@ -1,10 +1,10 @@
 [
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 8,
+    "losses": 3,
+    "scoredGoals": 34,
+    "concededGoals": 27,
+    "cardsYellow": 7,
     "cardsRed": 0,
     "team": {
       "id": "ultimate-mostoles",
@@ -88,11 +88,11 @@
     "rank": 1
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 7,
+    "losses": 4,
+    "scoredGoals": 37,
+    "concededGoals": 26,
+    "cardsYellow": 11,
     "cardsRed": 0,
     "team": {
       "id": "porcinos-fc",
@@ -177,11 +177,11 @@
     "rank": 2
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 7,
+    "losses": 4,
+    "scoredGoals": 40,
+    "concededGoals": 34,
+    "cardsYellow": 6,
     "cardsRed": 0,
     "team": {
       "id": "los-troncos-fc",
@@ -268,11 +268,11 @@
     "rank": 3
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 7,
+    "losses": 4,
+    "scoredGoals": 21,
+    "concededGoals": 18,
+    "cardsYellow": 3,
     "cardsRed": 0,
     "team": {
       "id": "saiyans-fc",
@@ -356,11 +356,11 @@
     "rank": 4
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 7,
+    "losses": 4,
+    "scoredGoals": 23,
+    "concededGoals": 22,
+    "cardsYellow": 1,
     "cardsRed": 0,
     "team": {
       "id": "kunisports",
@@ -444,10 +444,10 @@
     "rank": 5
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
+    "wins": 6,
+    "losses": 5,
+    "scoredGoals": 25,
+    "concededGoals": 25,
     "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
@@ -532,11 +532,99 @@
     "rank": 6
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 6,
+    "losses": 5,
+    "scoredGoals": 29,
+    "concededGoals": 30,
+    "cardsYellow": -1,
+    "cardsRed": 0,
+    "team": {
+      "id": "aniquiladores-fc",
+      "name": "Aniquiladores FC",
+      "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg",
+      "url": "",
+      "channel": "https://twitch.tv/juansguarnizo",
+      "coach": "???",
+      "socialNetworks": [
+        "https://www.twitch.tv/juansguarnizo"
+      ],
+      "players": [
+        {
+          "name": "F. Hernández",
+          "role": "jugador 11",
+          "image": "aniquiladores-fc-f-hernández.png"
+        },
+        {
+          "name": "Daniel P.",
+          "role": "Portero",
+          "image": "aniquiladores-fc-daniel-p.png"
+        },
+        {
+          "name": "Galvany",
+          "role": "Medio",
+          "image": "aniquiladores-fc-galvany.png"
+        },
+        {
+          "name": "Andrés",
+          "role": "Defensa",
+          "image": "aniquiladores-fc-andrs.png"
+        },
+        {
+          "name": "Bernat",
+          "role": "Medio",
+          "image": "aniquiladores-fc-bernat.png"
+        },
+        {
+          "name": "Pau Mañé",
+          "role": "Delantero",
+          "image": "aniquiladores-fc-pau-maé.png"
+        },
+        {
+          "name": "Jorquera",
+          "role": "Defensa",
+          "image": "aniquiladores-fc-jorquera.png"
+        },
+        {
+          "name": "Gilles V.",
+          "role": "Medio",
+          "image": "aniquiladores-fc-gilles-v.png"
+        },
+        {
+          "name": "Jadir",
+          "role": "Defensa",
+          "image": "aniquiladores-fc-jadir.png"
+        },
+        {
+          "name": "Roger",
+          "role": "Medio",
+          "image": "aniquiladores-fc-roger.png"
+        },
+        {
+          "name": "X.Morales",
+          "role": "Portero",
+          "image": "aniquiladores-fc-xmorales.png"
+        }
+      ],
+      "coachInfo": {
+        "name": "Sergio Verdirame",
+        "image": "sergio-verdirame.png"
+      },
+      "shortName": "ANI",
+      "president": {
+        "id": "juan-guarnizo",
+        "name": "Juan Guarnizo",
+        "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/juan-guarnizo.png",
+        "teamId": "aniquiladores-fc"
+      }
+    },
+    "rank": 7
+  },
+  {
+    "wins": 5,
+    "losses": 6,
+    "scoredGoals": 33,
+    "concededGoals": 25,
+    "cardsYellow": 8,
     "cardsRed": 0,
     "team": {
       "id": "el-barrio",
@@ -620,14 +708,14 @@
         "teamId": "el-barrio"
       }
     },
-    "rank": 7
+    "rank": 8
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 5,
+    "losses": 6,
+    "scoredGoals": 32,
+    "concededGoals": 34,
+    "cardsYellow": -2,
     "cardsRed": 0,
     "team": {
       "id": "1k",
@@ -711,102 +799,14 @@
         "teamID": "1k"
       }
     },
-    "rank": 8
-  },
-  {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
-    "cardsRed": 0,
-    "team": {
-      "id": "aniquiladores-fc",
-      "name": "Aniquiladores FC",
-      "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/aniquiladores.svg",
-      "url": "",
-      "channel": "https://twitch.tv/juansguarnizo",
-      "coach": "???",
-      "socialNetworks": [
-        "https://www.twitch.tv/juansguarnizo"
-      ],
-      "players": [
-        {
-          "name": "F. Hernández",
-          "role": "jugador 11",
-          "image": "aniquiladores-fc-f-hernández.png"
-        },
-        {
-          "name": "Daniel P.",
-          "role": "Portero",
-          "image": "aniquiladores-fc-daniel-p.png"
-        },
-        {
-          "name": "Galvany",
-          "role": "Medio",
-          "image": "aniquiladores-fc-galvany.png"
-        },
-        {
-          "name": "Andrés",
-          "role": "Defensa",
-          "image": "aniquiladores-fc-andrs.png"
-        },
-        {
-          "name": "Bernat",
-          "role": "Medio",
-          "image": "aniquiladores-fc-bernat.png"
-        },
-        {
-          "name": "Pau Mañé",
-          "role": "Delantero",
-          "image": "aniquiladores-fc-pau-maé.png"
-        },
-        {
-          "name": "Jorquera",
-          "role": "Defensa",
-          "image": "aniquiladores-fc-jorquera.png"
-        },
-        {
-          "name": "Gilles V.",
-          "role": "Medio",
-          "image": "aniquiladores-fc-gilles-v.png"
-        },
-        {
-          "name": "Jadir",
-          "role": "Defensa",
-          "image": "aniquiladores-fc-jadir.png"
-        },
-        {
-          "name": "Roger",
-          "role": "Medio",
-          "image": "aniquiladores-fc-roger.png"
-        },
-        {
-          "name": "X.Morales",
-          "role": "Portero",
-          "image": "aniquiladores-fc-xmorales.png"
-        }
-      ],
-      "coachInfo": {
-        "name": "Sergio Verdirame",
-        "image": "sergio-verdirame.png"
-      },
-      "shortName": "ANI",
-      "president": {
-        "id": "juan-guarnizo",
-        "name": "Juan Guarnizo",
-        "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/presidents/juan-guarnizo.png",
-        "teamId": "aniquiladores-fc"
-      }
-    },
     "rank": 9
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 4,
+    "losses": 7,
+    "scoredGoals": 27,
+    "concededGoals": 29,
+    "cardsYellow": -2,
     "cardsRed": 0,
     "team": {
       "id": "pio-fc",
@@ -891,11 +891,11 @@
     "rank": 10
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 3,
+    "losses": 8,
+    "scoredGoals": 27,
+    "concededGoals": 40,
+    "cardsYellow": -13,
     "cardsRed": 0,
     "team": {
       "id": "rayo-barcelona",
@@ -982,11 +982,11 @@
     "rank": 11
   },
   {
-    "wins": 0,
-    "losses": 0,
-    "scoredGoals": 0,
-    "concededGoals": 0,
-    "cardsYellow": 0,
+    "wins": 1,
+    "losses": 10,
+    "scoredGoals": 23,
+    "concededGoals": 41,
+    "cardsYellow": -18,
     "cardsRed": 0,
     "team": {
       "id": "jijantes-fc",
