@@ -1,10 +1,10 @@
 [
   {
-    "wins": 7,
-    "losses": 4,
-    "scoredGoals": 21,
-    "concededGoals": 18,
-    "cardsYellow": 3,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "saiyans-fc",
@@ -88,11 +88,11 @@
     "rank": 1
   },
   {
-    "wins": 8,
-    "losses": 3,
-    "scoredGoals": 34,
-    "concededGoals": 27,
-    "cardsYellow": 7,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "ultimate-mostoles",
@@ -176,11 +176,11 @@
     "rank": 2
   },
   {
-    "wins": 7,
-    "losses": 4,
-    "scoredGoals": 37,
-    "concededGoals": 26,
-    "cardsYellow": 11,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "porcinos-fc",
@@ -265,11 +265,11 @@
     "rank": 3
   },
   {
-    "wins": 7,
-    "losses": 4,
-    "scoredGoals": 23,
-    "concededGoals": 22,
-    "cardsYellow": 1,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "kunisports",
@@ -353,11 +353,11 @@
     "rank": 4
   },
   {
-    "wins": 5,
-    "losses": 6,
-    "scoredGoals": 33,
-    "concededGoals": 25,
-    "cardsYellow": 8,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "el-barrio",
@@ -444,11 +444,11 @@
     "rank": 5
   },
   {
-    "wins": 7,
-    "losses": 4,
-    "scoredGoals": 40,
-    "concededGoals": 34,
-    "cardsYellow": 6,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "los-troncos-fc",
@@ -535,10 +535,10 @@
     "rank": 6
   },
   {
-    "wins": 6,
-    "losses": 5,
-    "scoredGoals": 25,
-    "concededGoals": 25,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
     "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
@@ -623,11 +623,11 @@
     "rank": 7
   },
   {
-    "wins": 5,
-    "losses": 6,
-    "scoredGoals": 32,
-    "concededGoals": 34,
-    "cardsYellow": -2,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "1k",
@@ -714,11 +714,11 @@
     "rank": 8
   },
   {
-    "wins": 5,
-    "losses": 6,
-    "scoredGoals": 24,
-    "concededGoals": 28,
-    "cardsYellow": -4,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "aniquiladores-fc",
@@ -802,11 +802,11 @@
     "rank": 9
   },
   {
-    "wins": 4,
-    "losses": 7,
-    "scoredGoals": 25,
-    "concededGoals": 24,
-    "cardsYellow": 1,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "pio-fc",
@@ -891,11 +891,11 @@
     "rank": 10
   },
   {
-    "wins": 3,
-    "losses": 8,
-    "scoredGoals": 27,
-    "concededGoals": 40,
-    "cardsYellow": -13,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "rayo-barcelona",
@@ -982,11 +982,11 @@
     "rank": 11
   },
   {
-    "wins": 1,
-    "losses": 10,
-    "scoredGoals": 23,
-    "concededGoals": 41,
-    "cardsYellow": -18,
+    "wins": 0,
+    "losses": 0,
+    "scoredGoals": 0,
+    "concededGoals": 0,
+    "cardsYellow": 0,
     "cardsRed": 0,
     "team": {
       "id": "jijantes-fc",
