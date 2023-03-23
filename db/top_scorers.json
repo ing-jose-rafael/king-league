@@ -1,10 +1,19 @@
 [
   {
     "ranking": "1",
-    "playerName": "Ubón",
+    "playerName": "E. Álvaro",
     "gamesPlayed": 11,
     "goals": 13,
     "rank": 1,
+    "team": "Los Troncos FC",
+    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
+  },
+  {
+    "ranking": "1",
+    "playerName": "Ubón",
+    "gamesPlayed": 11,
+    "goals": 13,
+    "rank": 2,
     "team": "El Barrio",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/el-barrio.svg"
   },
@@ -13,16 +22,16 @@
     "playerName": "A. Bueno",
     "gamesPlayed": 11,
     "goals": 13,
-    "rank": 2,
+    "rank": 3,
     "team": "1K FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/1k.svg"
   },
   {
     "ranking": "1",
-    "playerName": "Álvaro, E.",
-    "gamesPlayed": 10,
+    "playerName": "J. Verdú",
+    "gamesPlayed": 9,
     "goals": 11,
-    "rank": 3,
+    "rank": 4,
     "team": "Los Troncos FC",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
@@ -31,7 +40,7 @@
     "playerName": "Juanma Glez.",
     "gamesPlayed": 11,
     "goals": 11,
-    "rank": 4,
+    "rank": 5,
     "team": "Ultimate Móstoles",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/ultimate-mostoles.svg"
   },
@@ -40,7 +49,7 @@
     "playerName": "Pelaz",
     "gamesPlayed": 11,
     "goals": 10,
-    "rank": 5,
+    "rank": 6,
     "team": "Rayo de Barcelona",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/rayo-barcelona.svg"
   },
@@ -49,18 +58,9 @@
     "playerName": "Coro",
     "gamesPlayed": 11,
     "goals": 9,
-    "rank": 6,
+    "rank": 7,
     "team": "Kunisports",
     "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/kunisports.svg"
-  },
-  {
-    "ranking": "1",
-    "playerName": "Verdú, J.",
-    "gamesPlayed": 8,
-    "goals": 9,
-    "rank": 7,
-    "team": "Los Troncos FC",
-    "image": "https://kings-league-api.ing-jcarreno.workers.dev/static/logos/los-troncos.svg"
   },
   {
     "ranking": "1",
@@ -253,8 +253,8 @@
   },
   {
     "ranking": "1",
-    "playerName": "Molas, X.",
-    "gamesPlayed": 10,
+    "playerName": "X. Molas",
+    "gamesPlayed": 11,
     "goals": 4,
     "rank": 29,
     "team": "Los Troncos FC",
@@ -334,7 +334,7 @@
   },
   {
     "ranking": "1",
-    "playerName": "Sánchez, S.",
+    "playerName": "S. Sánchez",
     "gamesPlayed": 2,
     "goals": 3,
     "rank": 38,
